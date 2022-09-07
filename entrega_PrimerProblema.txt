@@ -1,0 +1,4 @@
+La idea fue por un lado juntar las incopatibilidades de cada prenda y por el otro juntar las prendas con mismo tiempo de lavado. A partir
+de eso hice un algoritmo Greedy en donde agarro las prendas con mayor tiempo de lavado restante e intento agruparla en un balde que representa una maquina de lavar.
+A la hora de agregar la prenda en la máquina verifico si alguna de las prendas anteriormente insertadas es incompatible con dicha prenda, en caso de serlo,
+pruebo con otra máquina.
