@@ -3,7 +3,7 @@ from collections import OrderedDict
 def main():
     incompatible_pieces = {}
     pieces_by_wash_time = {}
-    with open("Primer Problema.txt", 'r') as File:
+    with open("Segundo Problema.txt", 'r') as File:
         for line in File:
             line = line.split()
             type = line[0]
@@ -49,7 +49,7 @@ def check_machines(piece, wash_plan, incompatible_pieces):
     for key, value in wash_plan.items():
         next_machine = True
         for piece_in_wash in value:
-            if piece_in_wash in incompatible_pieces[piece] or piece in incompatible_pieces[piece_in_wash]:
+            if piece_in_wash in incompatible_pieces.get(piece, []) or piece in incompatible_pieces.get(piece_in_wash, []):
                 available_machine = None
                 break
             else:
