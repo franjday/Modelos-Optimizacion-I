@@ -3,7 +3,7 @@ from collections import OrderedDict
 def main():
     incompatible_pieces = {}
     pieces_by_wash_time = {}
-    with open("Segundo Problema.txt", 'r') as File:
+    with open("Tercer Problema.txt", 'r') as File:
         for line in File:
             line = line.split()
             type = line[0]
